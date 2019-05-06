@@ -1,4 +1,4 @@
-FROM buildpack-deps:stretch
+FROM buildpack-deps:bionic
 
 RUN set -ex; \
 	if ! command -v gpg > /dev/null; then \

@@ -1,4 +1,4 @@
-FROM buildpack-deps:jessie
+FROM buildpack-deps:bionic
 
 RUN set -ex; \
 	if ! command -v gpg > /dev/null; then \

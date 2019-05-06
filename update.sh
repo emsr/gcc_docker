@@ -1,10 +1,10 @@
 #!/bin/bash
 set -Eeuo pipefail
 
-defaultDebianSuite='stretch'
+defaultDebianSuite='bionic'
 declare -A debianSuites=(
-	[6]='jessie'
-	[5]='jessie'
+	[6]='bionic'
+	[5]='disco'
 )
 
 cd "$(dirname "$(readlink -f "$BASH_SOURCE")")"
