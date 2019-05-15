@@ -1,0 +1,19 @@
+sudo docker login rsggitlab.alionscience.com/esmith-rowland
+
+# This can be referenced from UPM scripts.
+sudo docker build --rm -t rsggitlab.alionscience.com/esmith-rowland/gccN N
+sudo docker build --rm --no-cache -t rsggitlab.alionscience.com/esmith-rowland/gccN N
+
+# It's possible I could have a totally local thing.
+sudo docker build --rm -t gccN N
+sudo docker build --rm --no-cache -t gccN N
+
+# Remove dangling images
+sudo docker rmi -f $(sudo docker images --filter "dangling=true" -q --no-trunc)
+
+# snoop araound.
+sudo docker run -it rsggitlab.alionscience.com/esmith-rowland/gccN
+sudo docker run -it gccN
+
+# Kill all the things...
+sudo docker system prune
