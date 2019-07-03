@@ -4,6 +4,9 @@ sudo docker login rsggitlab.alionscience.com/esmith-rowland
 sudo docker build --rm -t rsggitlab.alionscience.com/esmith-rowland/gccN N
 sudo docker build --rm --no-cache -t rsggitlab.alionscience.com/esmith-rowland/gccN N
 
+sudo docker build --rm -t rsggitlab.alionscience.com/esmith-rowland/gcc9 9
+sudo docker build --rm -t rsggitlab.alionscience.com/esmith-rowland/gcc8 8
+
 # It's possible I could have a totally local thing.
 sudo docker build --rm -t gccN N
 sudo docker build --rm --no-cache -t gccN N
